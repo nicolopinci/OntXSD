@@ -1,0 +1,49 @@
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="modalWindow.css">
+    <link rel="stylesheet" type="text/css" href="draggable-resizable-dialog.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/webvowl.css" />
+    <link rel="stylesheet" type="text/css" href="css/webvowl.app.css" />
+
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script> <!-- https://stackoverflow.com/questions/37652447/html-how-to-include-external-html-page -->
+
+  <script src="addWorkspace.js" defer></script>
+ 
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+</head>
+<body>
+  <!-- Menu -->
+  <div class="menu">
+    <span class="tabsGroup menuItems">
+      <ul>
+
+      </ul>
+    </span>
+
+    <span class="exportImport menuItems">
+      <ul>
+
+        <li style="display:none" id="addW">Add workspace</li>
+      </ul>
+    </span>
+  </div>
+
+  <div style="display: none;" class="container" id="container">
+<div w3-include-html="extern.html"></div> 
+        <script>
+            w3IncludeHTML();
+        </script>
+   
+  </div>
+</body>
+</html>
